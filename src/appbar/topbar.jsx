@@ -10,7 +10,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from './Logo.png'
 import {AppBar, Toolbar, Box} from '@mui/material';
 
-const pages = ['Home', 'Services', 'Doctors', 'Patient Guide', 'About', 'Careers', 'Packages'];
+const pages = ['Home', 'Services', 'Doctors', 'Patient Guide', 'About', 'Careers', 'Packages', 'HMOs'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function TopBar() {
