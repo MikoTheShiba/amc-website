@@ -3,19 +3,20 @@ import './App.css';
 import TopBar from './appbar/topbar';
 import amcmain from './themes'
 import { ThemeProvider } from '@emotion/react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { RouteData } from './RouteData';
 
 function App() {
   return (
     <ThemeProvider theme={amcmain}>
-      <div className="App">
+      <div>
+      <Router>
         <TopBar/>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
-      </div>
+        <Routes>
+          {RouteData.map((sdata)=>(<Route path={sdata.path} exact element={sdata.page}/>))}
+        </Routes>
+      </Router>
+    </div>
     </ThemeProvider>
     
   );
