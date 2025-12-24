@@ -35,7 +35,7 @@ function TopBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{height:'5rem'}}>
