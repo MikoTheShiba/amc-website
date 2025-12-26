@@ -9,10 +9,11 @@ import { Toolbar } from '@mui/material'
 function App() {
   return (
     <ThemeProvider theme={amcmain}>
-      <Toolbar sx={{height:'5rem'}}/>
-      <TopBar/>
+      
       <div>
       <Router>
+        <Toolbar sx={{height:'5rem'}}/>
+        <TopBar/>
         <Routes>
           {RouteData.map((sdata)=>(<Route path={sdata.path} exact element={sdata.page}/>))}
         </Routes>

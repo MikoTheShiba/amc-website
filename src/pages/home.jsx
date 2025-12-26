@@ -58,11 +58,13 @@ const images = [
 const Home = () => {
     return (
         <div>
+            
             <Typography>1Under Construction</Typography>
             <Typography>2Under Construction</Typography>
             <Typography>3Under Construction</Typography>
             <Typography>4Under Construction</Typography>
             <Typography>5Under Construction</Typography>
+            <Typography variant='h2'>Our Partner HMOs</Typography>
             <Box sx={{ overflow: "hidden", whiteSpace: "nowrap", width: "100%", height: 200 }} >
             <Slider {...settings}>
                 {images.concat(images).map((src, i) => (
@@ -72,7 +74,7 @@ const Home = () => {
                         src={src}
                         alt={`gallery-${i}`}
                         sx={{
-                            height: 200,          // uniform height
+                            height: '100%',          // uniform height
                             width: "100%",        // fill slide width
                             objectFit: "cover",   // crop to fit nicely
                             p: 1,                 // padding for spacing
